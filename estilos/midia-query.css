@@ -1,0 +1,83 @@
+@media print {
+    * {
+        background-color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background: linear-gradient(to right, #49a09d,#5f2c82);
+    }
+
+    section#login {
+        font-size: 1rem;
+        background-color: rgba(222, 222, 222, 0.068);
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        transition: width.3s height.3s;
+        transition-timing-function: ease;
+    }
+
+    section#login > header#imagem {
+        background: url(../imagens/pexels-divinetechygirl-1181325.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 60vw;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    section#login > div#form {
+        flex: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background: linear-gradient(to right, #49a09d,#5f2c82);
+    }
+
+    section#login {
+        background-color: rgba(222, 222, 222, 0.068);
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        transition: width .3s height .3s;
+        transition-timing-function: ease;
+    }
+
+    section#login > header#imagem {
+        background: url(../imagens/pexels-divinetechygirl-1181325.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 60vw;
+        border-radius: 0px 10px 10px 0px;
+        order: 1;
+    }
+
+    section#login > div#form {
+        flex: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    div#form > h1 {
+        font-size: 2rem;
+    }
+
+    div#form > p, label {
+        font-size: 1.2rem;
+    }
+}
